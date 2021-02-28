@@ -4,8 +4,9 @@ Hello there.
 
 This is a program that receives an information input to run an algorithm through a palin text file.
 
-## Instructions
+## Context
 
+First, the program should recive the `challenge.in.txt` file through a path and the program (wishfully) will identify the separated lines to differentiate the operations id and values from the resource limit. Then it should compare the oparation values to find the ones wich sum result gets equal or closest to the resource limit, and return the id of those values.
 
 ### Project tasks
 
@@ -15,11 +16,13 @@ This is a program that receives an information input to run an algorithm through
 - Setup basic reporitory
 - Clone repository
 - Add and adjust template files (.gitignore, .eslint, package.json, etc.)
-- 
+- input file
 
-**TO DO**
+**WORK IN PROGRESS**
 - CLI
 - index.js
-- input
-- output
+
+**TO DO**
+
+- output file (general test)
 - /test
