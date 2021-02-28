@@ -21,9 +21,18 @@ module.exports = (givenPath, ids) => { //With this line, you can export the whol
 // 					return err ? reject(err) : resolve(file); //It can also responde this way, but I want to use the if else for now
 				})
 			})
-// 			const getOperations = (file) => {
-// 				
-// 			}
+			const getOperations = (inFile) => {
+				inFile = inFile.split('\n');
+				inFile.forEach(elemet => {
+					const regEx = /\D+(?=\d,\d)\D*/g;
+// 					const task = /.((?=\d)/g;
+					if (element.match(regEx)) {
+						let taskLine = element;
+					} else {
+						let resource = element;
+					}
+				})
+			}
 		}
 	})
 }
