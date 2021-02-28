@@ -1,0 +1,28 @@
+{
+  "name": "ikon-challenge",
+  "version": "1.0.0",
+  "description": "Program to find the optimal configuration when loaded with a background and a foreground task list, according to an specified resource consumption.",
+  "main": "bin/cli.js",
+  "bin": {
+    "ikon": "bin/cli.js"
+  },
+  "scripts": {
+    "eslint": "eslint --ext .js src/ test/",
+    "test": "jest --coverage",
+    "ikon": "ikon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarenHippitaku/ikon-challenge.git"
+  },
+  "author": "Karen Garzón / Karen Hippitaku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarenHippitaku/ikon-challenge/issues"
+  },
+  "homepage": "https://github.com/KarenHippitaku/ikon-challenge#readme",
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "jest": "^26.6.3"
+  }
+}

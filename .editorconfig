@@ -1,0 +1,18 @@
+# top-most EditorConfig file
+root = true
+
+# Tab indentation (no size specified)
+[*]
+indent_style = tab
+
+# Matches the exact files either package.json or .travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
+
+# Set default charset
+charset = utf-8
+trim_trailing_whitespace = true
+
+# Unix-style newlines with a newline ending every file
+insert_final_newline = true
