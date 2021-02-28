@@ -10,4 +10,4 @@ const idTwo = process.argv[4]; //and here the second one
 
 let ids = [idOne, idTwo];
 
-
+// To do: Probably rewrite this file, I am not shure about it anymore xD
