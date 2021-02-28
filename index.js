@@ -7,6 +7,9 @@ module.exports = (givenPath, ids) => { //With this line, you can export the whol
 		const rl = require('readline'); //To read line by line
 		const cwd = process.cwd(); //Returns the directory of the process, Current Working Directory
 		
+		let taskCollection = []; //A bunch of tasks 
+		let parsedTasks = []; //Let´s count! One task, two tasks, thrrrrrree tasks
+		
 		const readFile = (givenPath) => {
 			return new Promise ((resolve, reject) => {
 				fs.readFile(givenPath, 'utf8', (err, file) => {
@@ -23,11 +26,11 @@ module.exports = (givenPath, ids) => { //With this line, you can export the whol
 			})
 			const getOperations = (inFile) => {
 				inFile = inFile.split('\n');
-				inFile.forEach(elemet => {
-					const regEx = /\D+(?=\d,\d)\D*/g;
-// 					const task = /.((?=\d)/g;
-					if (element.match(regEx)) {
-						let taskLine = element;
+				inFile.forEach(element => {
+					const regExTask = /[\D+(?=\d)+(,)+(?=\d)+\D]*/g; //I am not sure if this RegExp works   
+					if (element.matchAll(regExTask) !== null) {
+						let taskLine = element.matchAll(regExTask);
+						taskCollection.push(taskLine);
 					} else {
 						let resource = element;
 					}
